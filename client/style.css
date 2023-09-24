@@ -1,0 +1,84 @@
+@font-face {
+  font-family: Inter;
+  src: url(fonts/disp.ttf);
+}
+
+@font-face {
+  font-family: Roboto Mono;
+  src: url(fonts/mono.ttf);
+}
+
+body {
+  font-family: Inter;
+}
+
+#configError {
+  background-color: darkred;
+  color: white;
+}
+
+#configBox {
+  width: 340px; /* ok */
+}
+
+#controlLog {
+  background-color: #121212;
+  border-radius: 4px;
+  color: white;
+  width: 700px;
+  height: 200px;
+}
+
+#headerBox.h1 {
+  line-height: 30px;
+}
+
+#saveLogButton {
+  position: absolute;
+  margin-left: 6px;
+  font-size:18px;
+}
+
+#lightBox {
+  display: flex;
+  background-color: #292929;
+  color: #9b9b9b;
+  width: 250px;
+  padding: 10px;
+  height:48px;
+}
+
+.lightContainer {
+  position:relative;
+  text-align: center;
+  width:48px;
+  padding-left:10px;
+  padding-right:18px;
+  line-height: 16px;
+  height:60px;
+}
+
+.lightLabel {
+  font-size: 10px;
+}
+
+.light {
+  width: 28px;
+}
+
+#horizontalDiv {
+  display: none;
+}
+
+#humanLog {
+  background-color: #292929;
+  color: white;
+  margin-left: 8px;
+  height:62px;
+  width: 422px;
+}
+
+textarea {
+  font-family: Roboto Mono;
+  font-size: x-small;
+}

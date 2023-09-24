@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BSRS</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="headerBox">
+        <h1 class="headerTitle">Better Sky Router Status</h1>
+        <!-- <code id="headerStatus">Waiting to connect</code> -->
+      </div>
+
+
+      <div id="configBox">
+        <p id="configError" hidden>...</p>
+        <span>WSS:</span> <input id="wssBox" type="text" value="192.168.0.20">
+        <button id="connectButton" type="submit">Connect</button>
+      </div>
+
+      <div id="controlBox" hidden>
+        <textarea id="controlLog" readonly></textarea>
+        <button id="saveLogButton">Save</button>
+      </div>
+
+      <br>
+
+      <div id="horizontalDiv">
+        <div id="lightBox">
+          <div class="lightContainer">
+            <img class="light" id="powerLight" src="lights/green.png">
+            <span class="lightLabel" id="powerLabel">POWER</span>
+          </div>
+          <div class="lightContainer">
+            <img class="light" id="internetLight" src="lights/green.png" title="2 beeps on activity">
+            <span class="lightLabel" id="internetLabel">INTERNET</span>
+          </div>
+          <div class="lightContainer">
+            <img class="light" id="wifiLight" src="lights/green.png">
+            <span class="lightLabel" id="wifiLabel">WI-FI</span>
+          </div>
+          <div class="lightContainer">
+            <img class="light" id="voiceLight" src="lights/green.png" title="4 beeps on activity">
+            <span class="lightLabel" id="voiceLabel">VOICE</span>
+          </div>
+        </div>
+        <div id="humanLogBox">
+          <textarea id="humanLog" readonly></textarea>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
